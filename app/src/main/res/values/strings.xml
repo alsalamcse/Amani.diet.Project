@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Amani.diet.Project</string>
+    <string name="etName">name</string>
+    <string name="etPassword">password</string>
+</resources>
