@@ -7,4 +7,9 @@
     android:orientation="vertical"
     tools:context="project.aslan.amani.amanidietproject.Advice">
 
+    <Button
+        android:id="@+id/Articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Articles" />
 </LinearLayout>

@@ -21,7 +21,8 @@
         <activity android:name=".progress" />
         <activity android:name=".Advice" />
         <activity android:name=".meals" />
-        <activity android:name=".sports"></activity>
+        <activity android:name=".sports" />
+        <activity android:name=".ForgotMyPassword"></activity>
     </application>
 
 </manifest>

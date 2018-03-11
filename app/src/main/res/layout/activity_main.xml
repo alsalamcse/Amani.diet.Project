@@ -39,23 +39,4 @@
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="114dp" />
 
-    <EditText
-        android:id="@+id/Previousweight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Previous weight"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="219dp" />
-
-    <EditText
-        android:id="@+id/UrWIghtNow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="your wight now"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="283dp" />
 </LinearLayout>

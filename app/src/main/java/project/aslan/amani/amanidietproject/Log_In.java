@@ -35,6 +35,7 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener {
         BTNSignIn = (Button) findViewById(R.id.BTNSignIn);
         BTNSignUp = (Button) findViewById(R.id.BTNSingUp);
         etPassword = (TextView) findViewById(R.id.etPassword);
+        FMPassword=(Button) findViewById(R.id.FMPassword);
         etName = (TextView) findViewById(R.id.etName);
         auth = FirebaseAuth.getInstance();
         firebaseUser = auth.getCurrentUser();
@@ -71,6 +72,7 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener {
     }
 
     @Override
+    //// inteqal mn saf7a lsaf7a: esm elkabas+asm alsaf7a.
     public void onClick(View view) {
         if (view ==BTNSignIn)
             dataHandler();
@@ -79,6 +81,13 @@ public class Log_In extends AppCompatActivity implements View.OnClickListener {
         {
             Intent intent = new Intent(Log_In.this, SignUp.class);
             startActivity(intent);
+        }
+        if(FMPassword==view)
+        dataHandler();
+
+        {
+           Intent intent=new Intent(Log_In.this,ForgotMyPassword.class);
+           startActivity(intent);
         }
 
     }

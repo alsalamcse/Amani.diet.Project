@@ -13,10 +13,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button sports;
     private Button Advice;
     private Button progress;
-    private EditText Previousweight;
-    private EditText UrWIghtNow;
     private Button DeitMeals;
-
+    private Button Articles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Advice = (Button) findViewById(R.id.advice);
         progress = (Button) findViewById(R.id.progress);
         DeitMeals = (Button) findViewById(R.id.DeitMeals);
-        Previousweight = (EditText) findViewById(R.id.Previousweight);
-        UrWIghtNow = (EditText) findViewById(R.id.UrWIghtNow);
-
 
     }
 
@@ -37,10 +32,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         if(sports==view){
-        Intent i= new Intent(this,sports.class);
+        Intent i= new Intent(MainActivity.this,sports.class);
             startActivity(i);
 
     }
+    if (Advice==view {
+
+            Intent i=new Intent(MainActivity.this,Advice.class);
+
+        }
+     if (progress==view){
+         Intent i=new Intent(MainActivity.this,progress.class);
+
+    }
+   if (DeitMeals==view){
+        Intent i=new Intent((MainActivity.this,meals.class);
+
+    }
+
 }
 
 
