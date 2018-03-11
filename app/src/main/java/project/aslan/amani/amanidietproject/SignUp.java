@@ -1,9 +1,11 @@
 package project.aslan.amani.amanidietproject;
 
+import android.content.Intent;
 import android.os.health.PackageHealthStats;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class SignUp extends AppCompatActivity {
+public class SignUp extends AppCompatActivity  implements View.OnClickListener{
     private EditText ETName;
     private EditText ETEMail;
     private EditText ETPassword;
@@ -33,8 +35,8 @@ public class SignUp extends AppCompatActivity {
         ETName = (EditText) findViewById(R.id.ETName);
         ETEMail = (EditText) findViewById(R.id.EtEmail);
         ETPassword = (EditText) findViewById(R.id.EtWight);
-        ETAge = (EditText) findViewById(R.id.EtAge);
-        Save = (Button) findViewById(R.id.Save);
+        ETAge =(EditText) findViewById(R.id.EtAge);
+        Save =(Button) findViewById(R.id.Save);
         auth=FirebaseAuth.getInstance();
         user=auth.getCurrentUser();
     }
@@ -62,5 +64,14 @@ public class SignUp extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onClick(View view) {
+        dataHander();
+        if (Save==view) {
+            Intent i = new Intent(SignUp.this, Log_In.class);
+        }
+
     }
 }

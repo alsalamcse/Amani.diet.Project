@@ -36,11 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(i);
 
     }
-    if (Advice==view {
+    if (Advice==view)
+    {
 
             Intent i=new Intent(MainActivity.this,Advice.class);
 
-        }
+    }
      if (progress==view){
          Intent i=new Intent(MainActivity.this,progress.class);
 
